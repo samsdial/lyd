@@ -8,6 +8,33 @@ import GalleryFive from "../assets/gallery-5.jpg";
 import GallerySix from "../assets/gallery-6.jpg";
 
 function GalleryStart() {
+  const imageItems = [
+    {
+      src: GalleryOne,
+      alt: "Image 1",
+    },
+    {
+      src: GalleryTwo,
+      alt: "Image 2",
+    },
+    {
+      src: GalleryThree,
+      alt: "Image 3",
+    },
+    {
+      src: GalleryFour,
+      alt: "Image 4",
+    },
+    {
+      src: GalleryFive,
+      alt: "Image 5",
+    },
+    {
+      src: GallerySix,
+      alt: "Image 6",
+    },
+  ];
+
   return (
     <div
       className="container-fluid bg-gallery"
@@ -18,70 +45,47 @@ function GalleryStart() {
         className="section-title position-relative text-center"
         style={{ marginBottom: "120px" }}
       >
+        <h1 className="font-secondary display-4 text-white">
+          “Amar no es mirarse el uno al otro; <br /> es mirar juntos en la misma
+          direccion”
+        </h1>
         <h6
-          className="text-uppercase text-primary mb-3"
-          style={{ letterSpacing: "3px" }}
+          className="text-uppercase text-white mb-3"
+          style={{ letterSpacing: "2px" }}
         >
           Antonie de Saint-Exupéry
         </h6>
-        <h1 className="font-secondary display-4 text-white">
-          “Amar no es mirarse el uno al otro; <br /> es mirar juntos es la misma
-          dirección”
-        </h1>
         <BsBalloonHeart className="fa-2x text-white" />
       </div>
-      <ul
-        className="list-group list-group-horizontal mb-4"
-        id="portfolio-flters"
-      >
-        <li>
-          <div className="gallery-item">
-            <img className="img-fluid w-100" src={GalleryOne} alt="" />
-            <a href={GalleryOne} data-lightbox="gallery">
-              <FaPlus className="fa-2x text-white" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div className="gallery-item">
-            <img className="img-fluid w-100" src={GalleryTwo} alt="" />
-            <a href={GalleryTwo} data-lightbox="gallery">
-              <FaPlus className="fa-2x text-white" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div className="gallery-item">
-            <img className="img-fluid w-100" src={GalleryThree} alt="" />
-            <a href={GalleryThree}>
-              <FaPlus className="fa-2x text-white" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div className="gallery-item">
-            <img className="img-fluid w-100" src={GalleryFour} alt="" />
-            <a href={GalleryFour}>
-              <FaPlus className="fa-2x text-white" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div className="gallery-item">
-            <img className="img-fluid w-100" src={GalleryFive} alt="" />
-            <a href={GalleryFive} data-lightbox="gallery">
-              <FaPlus className="fa-2x text-white" />
-            </a>
-          </div>
-        </li>
-        <li>
-          <div className="gallery-item">
-            <img className="img-fluid w-100" src={GallerySix} alt="" />
-            <a href={GallerySix} data-lightbox="gallery">
-              <FaPlus className="fa-2x text-white" />
-            </a>
-          </div>
-        </li>
+      <div className="d-none d-md-block">
+        <ul className="list-group list-group-horizontal mb-4">
+          {imageItems.map((item, index) => (
+            <li key={index}>
+              <div className="gallery-item">
+                <img
+                  className="img-fluid w-100"
+                  src={item.src}
+                  alt={item.alt}
+                />
+                <a data-lightbox="gallery">
+                  <FaPlus className="fa-2x text-white" />
+                </a>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
+      <ul className="d-block d-md-none list-group mb-4">
+        {imageItems.map((item, index) => (
+          <li key={index}>
+            <div className="gallery-item">
+              <img className="img-fluid w-100" src={item.src} alt={item.alt} />
+              <a data-lightbox="gallery">
+                <FaPlus className="fa-2x text-white" />
+              </a>
+            </div>
+          </li>
+        ))}
       </ul>
     </div>
   );

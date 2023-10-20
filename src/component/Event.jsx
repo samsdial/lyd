@@ -32,8 +32,10 @@ function Event() {
               <p className="mb-2">Cra 6 A este # 30 d 05</p>
               <p className="mb-2">Soacha, San Mateo</p>
               <a
-                href="http://maps.google.com/maps?q=4.5795,-74.2167"
+                href="https://maps.app.goo.gl/BnQ3vrFCarbwQe3E7"
+                target="_blank"
                 className="btn btn-outline-primary font-weight-bold m-1 py-2 px-4"
+                rel="noreferrer"
               >
                 Mapa
               </a>
@@ -48,8 +50,10 @@ function Event() {
               <p className="mb-2">Cra 7 A # 19A -82 tercer piso</p>
               <p className="mb-2">Soacha, Diagonal estadio municipal</p>
               <a
-                href="http://maps.google.com/maps?q=4.5795,-74.2167"
+                href="https://maps.app.goo.gl/YXvkkJWYSnvW2jSn6"
+                target="_blank"
                 className="btn btn-outline-primary font-weight-bold m-1 py-2 px-4"
+                rel="noreferrer"
               >
                 Mapa
               </a>

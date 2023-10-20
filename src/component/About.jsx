@@ -1,4 +1,5 @@
 import { BsBalloonHeart, BsFillEnvelopeHeartFill } from "react-icons/bs";
+import AboutOne from "../assets/about-1.jpg";
 import AboutTwo from "../assets/about-2.jpg";
 
 function About() {
@@ -26,8 +27,13 @@ function About() {
         <div className="row m-0">
           <div className="col-md-12 p-0" style={{ minHeight: "400px" }}>
             <img
-              className="position-absolute w-100 h-100"
+              className="d-none d-md-block position-absolute w-100 h-100"
               src={AboutTwo}
+              style={{ objectFit: "cover" }}
+            />
+            <img
+              className="d-block d-md-none position-absolute w-100 h-100"
+              src={AboutOne}
               style={{ objectFit: "cover" }}
             />
           </div>

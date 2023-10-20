@@ -1,0 +1,27 @@
+function Footer() {
+  return (
+    <div
+      className="container-fluid bg-dark text-white py-5"
+      id="contact"
+      style={{ marginTop: "90px" }}
+    >
+      <div className="container text-center py-5">
+        <div className="section-title position-relative text-center">
+          <h1 className="font-secondary display-3 text-white">Gracias</h1>
+          <i className="far fa-heart text-white"></i>
+        </div>
+        <div className="d-flex justify-content-center py-2">
+          <p className="text-white" href="#">
+            info@example.com
+          </p>
+          <span className="px-3">|</span>
+          <p className="text-white" href="#">
+            +57 310 2708237
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Footer;

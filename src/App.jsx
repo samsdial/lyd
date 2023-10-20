@@ -16,7 +16,6 @@ function App() {
       <GalleryStart />
       <FriendsFamilyStart />
       <About />
-      {/* <Story /> */}
       <Rsvp />
       <Footer />
     </>

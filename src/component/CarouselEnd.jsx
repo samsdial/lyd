@@ -1,6 +1,7 @@
 import { useState } from "react";
 import CarouseOne from "../assets/carousel-1.jpg";
 import CarouseTwo from "../assets/carousel-2.jpg";
+import AudioPlayer from "./AudioPlayer";
 import VideoModal from "./VideoModal";
 
 function CarouselEnd() {
@@ -23,14 +24,22 @@ function CarouselEnd() {
               style={{ height: "100vh", minHeight: "400px" }}
             >
               <img
-                className="position-absolute w-100 h-100"
+                className="d-none d-md-block position-absolute w-100 h-100"
                 src={CarouseOne}
                 style={{ objectFit: "cover" }}
               />
+              <img
+                className="d-block d-md-none position-absolute w-100 h-100"
+                src={CarouseTwo}
+                style={{ objectFit: "cover" }}
+              />
               <div className="carousel-caption d-flex flex-column align-items-center justify-content-center">
-                <div className="p-3" style={{ maxWidth: "900px" }}>
+                <div
+                  className="mt-5 mt-md-0 pt-5 pt-md-0 p-3"
+                  style={{ maxWidth: "900px" }}
+                >
                   <h1 className="display-1 font-secondary text-white mt-n3 mb-md-4">
-                    Diego & Laura
+                    Laura & Diego
                   </h1>
                   <div className="d-inline-block border-top border-bottom border-light py-3 px-4">
                     <h3
@@ -40,9 +49,10 @@ function CarouselEnd() {
                       Nos vamos a casar
                     </h3>
                   </div>
-                  <button className="btn-play mx-auto" onClick={openModal}>
+                  <AudioPlayer />
+                  {/* <button className="btn-play mx-auto" onClick={openModal}>
                     <span></span>
-                  </button>
+                  </button> */}
                 </div>
               </div>
             </div>

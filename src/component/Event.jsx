@@ -1,3 +1,5 @@
+import { BsBalloonHeart } from "react-icons/bs";
+
 function Event() {
   return (
     <div className="container-fluid py-5" id="event">
@@ -10,7 +12,7 @@ function Event() {
             Evento
           </h6>
           <h1 className="font-secondary display-4">Nuestra Boda</h1>
-          <i className="far fa-heart text-dark"></i>
+          <BsBalloonHeart className="fa-2x text-dark" />
         </div>
         <div className="row justify-content-center">
           <div className="col-md-6 text-center">

@@ -1,3 +1,5 @@
+import { BsBalloonHeart } from "react-icons/bs";
+
 function Footer() {
   return (
     <div
@@ -8,7 +10,7 @@ function Footer() {
       <div className="container text-center py-5">
         <div className="section-title position-relative text-center">
           <h1 className="font-secondary display-3 text-white">Gracias</h1>
-          <i className="far fa-heart text-white"></i>
+          <BsBalloonHeart className="fa-2x text-white" />
         </div>
         <div className="d-flex justify-content-center py-2">
           <p className="text-white" href="#">

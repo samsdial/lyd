@@ -1,3 +1,4 @@
+import { BsBalloonHeart } from "react-icons/bs";
 import StoryOne from "../assets/story-1.jpg";
 import StoryTwo from "../assets/story-2.jpg";
 import StoryThree from "../assets/story-3.jpg";
@@ -15,7 +16,7 @@ function Story() {
             Story
           </h6>
           <h1 className="font-secondary display-4">Our Love Story</h1>
-          <i className="far fa-heart text-dark"></i>
+          <BsBalloonHeart className="fa-2x text-dark" />
         </div>
         <div className="container timeline position-relative p-0">
           <div className="row">

@@ -1,3 +1,5 @@
+import { BsBalloonHeart } from "react-icons/bs";
+import { FaPlus } from "react-icons/fa";
 import GalleryOne from "../assets/gallery-1.jpg";
 import GalleryTwo from "../assets/gallery-2.jpg";
 import GalleryThree from "../assets/gallery-3.jpg";
@@ -26,46 +28,61 @@ function GalleryStart() {
           “Amar no es mirarse el uno al otro; <br /> es mirar juntos es la misma
           dirección”
         </h1>
-        <i className="far fa-heart text-white"></i>
+        <BsBalloonHeart className="fa-2x text-white" />
       </div>
-      <div className="owl-carousel gallery-carousel">
-        <div className="gallery-item">
-          <img className="img-fluid w-100" src={GalleryOne} alt="" />
-          <a href={GalleryOne} data-lightbox="gallery">
-            <i className="fa fa-2x fa-plus text-white"></i>
-          </a>
-        </div>
-        <div className="gallery-item">
-          <img className="img-fluid w-100" src={GalleryTwo} alt="" />
-          <a href={GalleryTwo} data-lightbox="gallery">
-            <i className="fa fa-2x fa-plus text-white"></i>
-          </a>
-        </div>
-        <div className="gallery-item">
-          <img className="img-fluid w-100" src={GalleryThree} alt="" />
-          <a href={GalleryThree} data-lightbox="gallery">
-            <i className="fa fa-2x fa-plus text-white"></i>
-          </a>
-        </div>
-        <div className="gallery-item">
-          <img className="img-fluid w-100" src={GalleryFour} alt="" />
-          <a href={GalleryFour} data-lightbox="gallery">
-            <i className="fa fa-2x fa-plus text-white"></i>
-          </a>
-        </div>
-        <div className="gallery-item">
-          <img className="img-fluid w-100" src={GalleryFive} alt="" />
-          <a href={GalleryFive} data-lightbox="gallery">
-            <i className="fa fa-2x fa-plus text-white"></i>
-          </a>
-        </div>
-        <div className="gallery-item">
-          <img className="img-fluid w-100" src={GallerySix} alt="" />
-          <a href={GallerySix} data-lightbox="gallery">
-            <i className="fa fa-2x fa-plus text-white"></i>
-          </a>
-        </div>
-      </div>
+      <ul
+        className="list-group list-group-horizontal mb-4"
+        id="portfolio-flters"
+      >
+        <li>
+          <div className="gallery-item">
+            <img className="img-fluid w-100" src={GalleryOne} alt="" />
+            <a href={GalleryOne} data-lightbox="gallery">
+              <FaPlus className="fa-2x text-white" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div className="gallery-item">
+            <img className="img-fluid w-100" src={GalleryTwo} alt="" />
+            <a href={GalleryTwo} data-lightbox="gallery">
+              <FaPlus className="fa-2x text-white" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div className="gallery-item">
+            <img className="img-fluid w-100" src={GalleryThree} alt="" />
+            <a href={GalleryThree}>
+              <FaPlus className="fa-2x text-white" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div className="gallery-item">
+            <img className="img-fluid w-100" src={GalleryFour} alt="" />
+            <a href={GalleryFour}>
+              <FaPlus className="fa-2x text-white" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div className="gallery-item">
+            <img className="img-fluid w-100" src={GalleryFive} alt="" />
+            <a href={GalleryFive} data-lightbox="gallery">
+              <FaPlus className="fa-2x text-white" />
+            </a>
+          </div>
+        </li>
+        <li>
+          <div className="gallery-item">
+            <img className="img-fluid w-100" src={GallerySix} alt="" />
+            <a href={GallerySix} data-lightbox="gallery">
+              <FaPlus className="fa-2x text-white" />
+            </a>
+          </div>
+        </li>
+      </ul>
     </div>
   );
 }

@@ -1,3 +1,5 @@
+import { BsBalloonHeart } from "react-icons/bs";
+
 function Rsvp() {
   return (
     <div className="container-fluid py-5" id="rsvp">
@@ -10,7 +12,7 @@ function Rsvp() {
             RSVP
           </h6>
           <h1 className="font-secondary display-4">Únete a Nuestro Partido</h1>
-          <i className="far fa-heart text-dark"></i>
+          <BsBalloonHeart className="fa-2x text-dark" />
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-8">

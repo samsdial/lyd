@@ -1,3 +1,5 @@
+import { BsBalloonHeart } from "react-icons/bs";
+
 function FriendsFamilyStart() {
   return (
     <>
@@ -11,7 +13,7 @@ function FriendsFamilyStart() {
               Con la bendición de
             </h6>
             <h1 className="font-secondary display-4">Nuestros Padres</h1>
-            <i className="far fa-heart text-dark"></i>
+            <BsBalloonHeart className="fa-2x text-dark" />
           </div>
           <div className="row">
             <div className="col-md-6 border-right border-primary">
@@ -43,7 +45,7 @@ function FriendsFamilyStart() {
               Acompañados de
             </h6>
             <h1 className="font-secondary display-4">Nuestros Padrinos</h1>
-            <i className="far fa-heart text-dark"></i>
+            <BsBalloonHeart className="fa-2x text-dark" />
           </div>
           <div className="row justify-content-center">
             <div className="col-md-6 text-center">

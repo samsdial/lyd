@@ -28,8 +28,8 @@ function FriendsFamilyStart() {
               <div className="text-center text-md-left ml-md-3">
                 <img className="img-fluid mb-4" src="img/event-2.jpg" alt="" />
                 <h4 className="mb-3">Novio</h4>
-                <p className="mb-2">William Barrios</p>
                 <p className="mb-2">Margarita Otálora</p>
+                <p className="mb-2">William Barrios</p>
               </div>
             </div>
           </div>

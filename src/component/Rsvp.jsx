@@ -49,6 +49,24 @@ function Rsvp() {
         </div>
         <div className="row justify-content-center">
           <div className="col-lg-8">
+            <div className="text-center">
+              <p>
+                A todos nuestro invitados, agradecemos su comprensión. <br />{" "}
+                Nuestra celebración será de adultos. Por favor, no incluir a sus
+                hijos en la confirmación. Esperamos compartir este momento
+                especial con ustedes.
+              </p>
+              <h6
+                className="text-uppercase text-primary mb-3"
+                style={{ letterSpacing: "3px" }}
+              >
+                Gracias
+              </h6>
+            </div>
+          </div>
+        </div>
+        <div className="row justify-content-center">
+          <div className="col-lg-8">
             {formSubmitted ? (
               <div className="text-center">
                 <p>{responseMessage}</p>
@@ -101,10 +119,7 @@ function Rsvp() {
                         name="Attending"
                       >
                         <option>Asistiré</option>
-                        <option>I'm Attending</option>
                         <option>Todos los eventos</option>
-                        <option>All Events</option>
-                        <option>Wedding Party</option>
                         <option>Fiesta de bodas</option>
                       </select>
                     </div>

@@ -14,11 +14,11 @@ function Footer() {
         </div>
         <div className="d-flex justify-content-center py-2">
           <p className="text-white" href="#">
-            info@example.com
+            dialstudios@gmail.com
           </p>
           <span className="px-3">|</span>
           <p className="text-white" href="#">
-            +57 310 2708237
+            +57 321 2679 283
           </p>
         </div>
       </div>
